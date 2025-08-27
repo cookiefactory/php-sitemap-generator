@@ -242,7 +242,7 @@ class SitemapGeneratorTest extends TestCase
         $this->g->submitSitemap();
     }
 
-    public function robotsContentProvider()
+    public static function robotsContentProvider()
     {
         return [
             'withExistingContent_NoSitemapURL' => [
@@ -260,9 +260,7 @@ class SitemapGeneratorTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider robotsContentProvider
-     */
+    #[\PHPUnit\Framework\Attributes\DataProvider('robotsContentProvider')]
     public function testCreateNewRobotsContentFromFile($file_get_contents_return, $file_exists_return)
     {
         $this->fs->expects($this->once())
