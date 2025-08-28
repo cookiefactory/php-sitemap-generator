@@ -1,18 +1,12 @@
 {
-  "name": "icamys/php-sitemap-generator",
+  "name": "thomann/php-sitemap-generator",
+  "version": "6.0.0",
   "description": "Simple PHP sitemap generator.",
   "keywords": ["php", "sitemap", "generator", "psr-1", "psr-2", "psr-4"],
   "homepage": "https://github.com/icamys/php-sitemap-generator",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "stable",
-  "authors": [
-    {
-      "name": "Dmitrii Prisacari",
-      "email": "prisacari.dmitrii@gmail.com",
-      "homepage": "https://github.com/icamys/"
-    }
-  ],
   "require": {
     "php": ">= 8.2",
     "ext-curl": "*",
